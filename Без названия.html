@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ru" class="dark"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;404:DT — Официальные ресурсы&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Typography --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Tailwind CSS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Lucide Icons --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://unpkg.com/lucide@latest"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-tap-highlight-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>user-select: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>outline: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg-void: #040507;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--steel-base: #0c0e12;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--steel-panel: #11141a;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--steel-border: rgba(180, 200, 220, 0.14);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--steel-glow: rgba(140, 175, 215, 0.22);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>touch-action: manipulation;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: var(--bg-void);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-image:</p>
+<p class="p1"><span class="Apple-converted-space">        </span>radial-gradient(ellipse 90% 45% at 50% -10%, rgba(130, 160, 200, 0.16) 0%, transparent 70%),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>radial-gradient(circle 420px at 50% 105%, rgba(25, 32, 45, 0.8) 0%, transparent 65%),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>linear-gradient(180deg, #07090d 0%, #030406 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #e6edf5;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-top: max(1.2rem, env(safe-area-inset-top));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-bottom: max(1.5rem, env(safe-area-inset-bottom));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: -0.015em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Subtle carbon micro-texture */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body::before {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>inset: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-size: 16px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: -2;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0.55;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Armor Glass Card with brushed titanium rim */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.titanium-glass {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(180deg, rgba(23, 27, 36, 0.72) 0%, rgba(10, 13, 18, 0.82) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(36px) saturate(160%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-backdrop-filter: blur(36px) saturate(160%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--steel-border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow:<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>0 32px 70px -15px rgba(0, 0, 0, 0.95),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>0 0 0 1px rgba(255, 255, 255, 0.03),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>inset 0 1px 1px 0 rgba(220, 235, 255, 0.22),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>inset 0 -1px 2px 0 rgba(0, 0, 0, 0.8);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Pure Logo Container without Card Box (Float &amp; Glow) */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.custom-logo-badge {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: floatBadge 5s ease-in-out infinite;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.custom-logo-badge img {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>object-fit: contain;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.8));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Ambient Pulsating Halo */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.custom-logo-badge::before {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>inset: -10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: radial-gradient(ellipse at center, rgba(160, 200, 255, 0.18) 0%, rgba(90, 130, 185, 0.04) 50%, transparent 75%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>filter: blur(16px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: -1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: pulseGlow 4s ease-in-out infinite alternate;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Metallic Buttons matched to titanium plate */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.metal-row {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(180deg, rgba(30, 36, 48, 0.55) 0%, rgba(13, 16, 22, 0.7) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(170, 195, 225, 0.12);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow:<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>0 6px 20px -4px rgba(0, 0, 0, 0.6),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>inset 0 1px 0 0 rgba(230, 242, 255, 0.12),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>inset 0 -1px 1px 0 rgba(0, 0, 0, 0.6);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.metal-row::before {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>inset: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: inherit;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: radial-gradient(circle at 50% 0%, rgba(200, 225, 255, 0.14), transparent 75%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: opacity 0.28s ease;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.metal-row:hover::before {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.metal-row:active {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: scale(0.985);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-color: rgba(205, 230, 255, 0.25);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(180deg, rgba(40, 50, 68, 0.7) 0%, rgba(16, 20, 28, 0.85) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* 3D Titanium Icon Tiles */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.metal-icon-tile {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(145deg, rgba(60, 72, 92, 0.45) 0%, rgba(18, 22, 30, 0.85) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(210, 230, 255, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow:<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>0 8px 16px -2px rgba(0, 0, 0, 0.7),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>inset 0 1px 1px 0 rgba(255, 255, 255, 0.35),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>inset 0 -1px 2px 0 rgba(0, 0, 0, 0.7);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Brushed Chrome Beveled Support Banner */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.metal-support-tint {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, rgba(45, 62, 88, 0.38) 0%, rgba(18, 24, 34, 0.65) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(150, 195, 245, 0.24);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow:<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>0 6px 24px -4px rgba(0, 0, 0, 0.6),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>inset 0 1px 1px 0 rgba(230, 245, 255, 0.22);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.metal-support-tint::after {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: -50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: -50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 200%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 200%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(60deg, transparent 40%, rgba(255, 255, 255, 0.08) 50%, transparent 60%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: bannerShimmer 5.5s infinite ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes floatBadge {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>0%, 100% {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>transform: translateY(0px) scale(1);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>50% {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>transform: translateY(-3px) scale(1.008);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes pulseGlow {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>0% {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>opacity: 0.35;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>transform: scale(0.97);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>100% {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>opacity: 0.75;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>transform: scale(1.03);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes bannerShimmer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>0% { transform: translateX(-100%); }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>22%, 100% { transform: translateX(100%); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes techFadeIn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>from {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>transform: translateY(16px) scale(0.985);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>to {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>transform: translateY(0) scale(1);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.anim-tech {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: techFadeIn 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body class="flex flex-col justify-center items-center px-4"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Cold Metallic Ambient Light Spots --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[420px] h-[360px] rounded-full bg-slate-400/[0.1] blur-[140px] pointer-events-none -z-10"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="fixed bottom-[-8%] right-[-5%] w-[340px] h-[340px] rounded-full bg-cyan-900/[0.12] blur-[130px] pointer-events-none -z-10"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="fixed top-[45%] left-[-15%] w-[320px] h-[320px] rounded-full bg-slate-600/[0.08] blur-[120px] pointer-events-none -z-10"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Main Mobile Card Container --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main class="w-full max-w-[390px] flex flex-col justify-center items-center py-2"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="w-full titanium-glass rounded-[32px] p-5 sm:p-6 anim-tech flex flex-col items-center"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Чистый логотип без обрамляющей плашки с подсветкой и парением --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="mb-5 w-full flex flex-col items-center px-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="custom-logo-badge"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="https://i.postimg.cc/Z5pgjQ2g/IMG-7232.jpg" alt="404:DT Logo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Список официальных ресурсов 404:DT --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;nav class="w-full space-y-2.5"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 1. Telegram --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://t.me/DT404ru" target="_blank" rel="noopener noreferrer" class="metal-row rounded-2xl flex items-center justify-between p-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="w-11 h-11 rounded-2xl flex items-center justify-center shrink-0 metal-icon-tile"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;svg viewBox="0 0 24 24" fill="none" stroke="#e0ecf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 filter drop-shadow-[0_0_6px_rgba(180,210,255,0.7)]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;path d="m22 2-7 20-4-9-9-4Z"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;path d="M22 2 11 13"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="block text-sm font-semibold text-white tracking-tight"&gt;Telegram&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="block text-[11px] text-zinc-400 font-medium tracking-normal"&gt;t.me/DT404ru&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;i data-lucide="chevron-right" class="w-4 h-4 text-white/35 mr-1"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 2. YouTube --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://youtube.com/@404dt?si=U_6i1A5v9VwdPGXH" target="_blank" rel="noopener noreferrer" class="metal-row rounded-2xl flex items-center justify-between p-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="w-11 h-11 rounded-2xl flex items-center justify-center shrink-0 metal-icon-tile"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;svg viewBox="0 0 24 24" fill="none" stroke="#e0ecf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 filter drop-shadow-[0_0_6px_rgba(255,255,255,0.7)]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;polygon points="10 15 15 12 10 9 10 15" fill="#e0ecf8"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="block text-sm font-semibold text-white tracking-tight"&gt;YouTube&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="block text-[11px] text-zinc-400 font-medium tracking-normal"&gt;youtube.com/@404dt&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;i data-lucide="chevron-right" class="w-4 h-4 text-white/35 mr-1"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 3. TikTok --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="http://www.tiktok.com/@404_dt" target="_blank" rel="noopener noreferrer" class="metal-row rounded-2xl flex items-center justify-between p-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="w-11 h-11 rounded-2xl flex items-center justify-center shrink-0 metal-icon-tile"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;svg viewBox="0 0 24 24" fill="none" stroke="#e0ecf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 filter drop-shadow-[0_0_6px_rgba(255,255,255,0.7)]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="block text-sm font-semibold text-white tracking-tight"&gt;TikTok&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="block text-[11px] text-zinc-400 font-medium tracking-normal"&gt;tiktok.com/@404_dt&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;i data-lucide="chevron-right" class="w-4 h-4 text-white/35 mr-1"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 4. Instagram --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://instagram.com/404.dt?vrfl=MXU4aXozODI2eWpwMA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" class="metal-row rounded-2xl flex items-center justify-between p-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="w-11 h-11 rounded-2xl flex items-center justify-center shrink-0 metal-icon-tile"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;svg viewBox="0 0 24 24" fill="none" stroke="#e0ecf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 filter drop-shadow-[0_0_6px_rgba(255,255,255,0.7)]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;rect width="20" height="20" x="2" y="2" rx="5" ry="5"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="block text-sm font-semibold text-white tracking-tight"&gt;Instagram&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="block text-[11px] text-zinc-400 font-medium tracking-normal"&gt;instagram.com/404.dt&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;i data-lucide="chevron-right" class="w-4 h-4 text-white/35 mr-1"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 5. Сотрудничество --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://t.me/Suport404DT" target="_blank" rel="noopener noreferrer" class="metal-row rounded-2xl flex items-center justify-between p-3 bg-white/[0.04] border-white/10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="w-11 h-11 rounded-2xl flex items-center justify-center shrink-0 metal-icon-tile"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;svg viewBox="0 0 24 24" fill="none" stroke="#e0ecf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 filter drop-shadow-[0_0_6px_rgba(255,255,255,0.7)]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;rect width="20" height="14" x="2" y="7" rx="2" ry="2"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="block text-sm font-semibold text-white tracking-tight"&gt;Сотрудничество&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="block text-[11px] text-zinc-400 font-medium tracking-normal"&gt;t.me/Suport404DT&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;i data-lucide="chevron-right" class="w-4 h-4 text-white/35 mr-1"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 6. Блок поддержки --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="metal-row metal-support-tint rounded-2xl flex items-center gap-3 p-3 mt-1 text-left"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="w-11 h-11 rounded-2xl flex items-center justify-center shrink-0 bg-sky-400/15 border border-sky-300/30 text-sky-200 shadow-[0_0_14px_rgba(125,185,255,0.25)]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;i data-lucide="sparkles" class="w-5 h-5"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="flex-1 pr-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="block text-xs font-semibold text-white tracking-tight leading-snug"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Самая лучшая поддержка — это ваша подписка</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Нижняя панель действий --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="w-full grid grid-cols-2 gap-2.5 mt-4 pt-4 border-t border-white/[0.08]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button id="show-qr" type="button" class="metal-row rounded-xl px-2.5 py-2.5 flex items-center justify-center gap-1.5 text-xs font-semibold text-zinc-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;i data-lucide="qr-code" class="w-4 h-4 text-zinc-300 shrink-0"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;QR-код&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button id="share-or-copy" type="button" class="metal-row rounded-xl px-2.5 py-2.5 flex items-center justify-center gap-1.5 text-xs font-semibold text-zinc-300 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;i data-lucide="share-2" class="w-4 h-4 text-zinc-300 shrink-0"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="truncate"&gt;Поделиться с другом каналом&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Модальное окно с QR-кодом --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="qrModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-xl flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="qrCard" class="bg-[#0b0e13] border border-white/20 w-full max-w-xs rounded-[28px] p-6 text-center shadow-[0_25px_60px_rgba(0,0,0,0.95)] transform scale-95 transition-transform duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="flex items-center justify-between mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="font-semibold text-white text-sm tracking-tight"&gt;QR-код визитки&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button id="close-qr" class="p-1 rounded-full text-zinc-400 hover:text-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;i data-lucide="x" class="w-4 h-4"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="bg-white p-3 rounded-2xl inline-block shadow-inner mb-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img id="qrImage" src="" alt="QR Code" class="w-44 h-44 object-contain rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="text-[11px] text-zinc-400"&gt;Наведите камеру смартфона для быстрого перехода ко всем ресурсам 404:DT&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Всплывающее уведомление --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="copy-toast" class="fixed bottom-7 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 bg-[#10141c]/95 backdrop-blur-md text-white border border-white/20 shadow-2xl px-5 py-2.5 rounded-full text-xs font-medium transform translate-y-12 opacity-0 transition-all duration-300 pointer-events-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span id="toast-text"&gt;Ссылка скопирована&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;input type="text" id="clipboardInput" class="sr-only" aria-hidden="true" value="" /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>lucide.createIcons();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>let toastTimer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const toast = document.getElementById('copy-toast');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const toastText = document.getElementById('toast-text');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function showToast(message) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (message) toastText.textContent = message;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>clearTimeout(toastTimer);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>toast.classList.remove('translate-y-12', 'opacity-0');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>toast.classList.add('translate-y-0', 'opacity-100');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>toastTimer = setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>toast.classList.remove('translate-y-0', 'opacity-100');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>toast.classList.add('translate-y-12', 'opacity-0');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}, 2200);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function getShareUrl() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return window.location.href.split('#')[0];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function execCopy(text) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const input = document.getElementById('clipboardInput');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>input.value = text;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>input.select();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.execCommand('copy');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>showToast('Ссылка скопирована');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function shareOrCopy() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const url = getShareUrl();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const shareData = {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title: '404:DT — Официальные ресурсы',</p>
+<p class="p1"><span class="Apple-converted-space">        </span>text: 'Все официальные платформы канала 404:DT в одной визитке:',</p>
+<p class="p1"><span class="Apple-converted-space">        </span>url: url</p>
+<p class="p1"><span class="Apple-converted-space">      </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (navigator.share &amp;&amp; navigator.canShare &amp;&amp; navigator.canShare(shareData)) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>navigator.share(shareData).catch((err) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>if (err.name !== 'AbortError') {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>copyUrlFallback(url);</p>
+<p class="p1"><span class="Apple-converted-space">          </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>copyUrlFallback(url);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function copyUrlFallback(url) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>navigator.clipboard.writeText(url)</p>
+<p class="p1"><span class="Apple-converted-space">          </span>.then(() =&gt; showToast('Ссылка скопирована'))</p>
+<p class="p1"><span class="Apple-converted-space">          </span>.catch(() =&gt; execCopy(url));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>execCopy(url);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('share-or-copy').addEventListener('click', shareOrCopy);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const qrModal = document.getElementById('qrModal');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const qrCard = document.getElementById('qrCard');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const qrImg = document.getElementById('qrImage');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('show-qr').addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const currentUrl = getShareUrl();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=${encodeURIComponent(currentUrl)}&amp;color=08090d`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>qrModal.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>qrModal.classList.remove('opacity-0');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>qrCard.classList.remove('scale-95');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>qrCard.classList.add('scale-100');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}, 10);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function closeQr() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>qrModal.classList.add('opacity-0');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>qrCard.classList.remove('scale-100');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>qrCard.classList.add('scale-95');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>setTimeout(() =&gt; { qrModal.classList.add('hidden'); }, 300);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('close-qr').addEventListener('click', closeQr);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>qrModal.addEventListener('click', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (e.target === qrModal) closeQr();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+<p class="p1">```eof</p>
+<p class="p2"><br></p>
+<p class="p1">Теперь перетащите этот скачанный файл `index.html` в окно загрузки на GitHub, прокрутите вниз и нажмите зеленую кнопку **«Подтвердить изменения»**. Ваша визитка будет опубликована!</p>
+</body>
+</html>
